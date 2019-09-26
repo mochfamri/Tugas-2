@@ -1,0 +1,71 @@
+<!-- pembuka file html -->
+<html>
+    <!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+    <head>
+        <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+        <title>Cara Penggunaan Selector</title>
+        <style>
+            /* fungsi koma dalam selector css berfungsi agar kedua heading tersebut berwarna biru */
+            h2 , h3 {
+                
+                color: violet;
+            }
+            strong {
+            
+                color: blue;
+            }
+            /* pada selector kali ini kita memilih h2 yang memiliki tag span dan tag span yang memiliki tag i */
+            h2 span i {
+                color:red;
+            }
+            h2.judul , .paragraf {
+                /* mengubah style text nya dijadikan text miring */
+                font-style: italic;
+            }
+            /* pada code dibawah ini berfungsi untuk mengubah ukuran text pada id belajar html belajar css dan class subheader */
+            #belajar_html, p#belajar_css, h3.subheader {
+                font-size:14pt;
+            }
+        </style>
+    </head>
+    <!-- penutup tag head -->
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+    <body>
+        <!-- tag h2 berfungsi untuk membuat heading 2 pada file html -->
+        <!-- pada class judul kita membuat selector judul dengan class selector -->
+        <h2 class="judul">Belajar CSS</h2>
+        <!-- fungsi strong adalah menekankan text yang kita pilih -->
+        <p> Ini <strong>adalah</strong> sebuah <em>paragraf</em> </p>
+        <p id="belajar_html" class="paragraf" >Saya sedang belajar HTML dari
+        <a href="https://api.whatsapp.com/send?phone=628981234567&text=Halo%20mau%20order%20gan" target="_blank">Klik Yuk...</a>
+        akan terbuka pada tab baru</p>
+        <!-- pada tag p kita membuat multi selector dengan menggunakan class selector dan id selector -->
+        <p id="belajar_css" class="paragraf">
+        Saya belajar css gan </p>
+        <br />
+        <!-- pada h3 menggunakan multi selector class judul dan subheader -->
+        <h3 class="judul subheader">Liga Inggris</h3>
+        <!-- ol berfungsi untuk membuat list yang terdiri dari nomor -->
+        <ol>
+            <li><em>Team</em></li>
+            <li>Chelsea</li>
+            <li>Arsenal</li>
+            <li>Liverpool</li>
+            <li>Manchester United</li>
+        </ol>
+
+
+            <!-- ol berfungsi untuk membuat list yang terdiri dari karakter spesial atau dengan simbol  -->
+            <ul>
+                <li><em>Top Pemain</em></li>
+                <li>Mount</li>
+                <li>Salah</li>
+                <li>degea</li>
+
+            </ul>
+
+
+    </body>
+    <!-- tutup tag body -->
+</html>
+<!-- tutup tag html -->

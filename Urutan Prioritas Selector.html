@@ -1,0 +1,50 @@
+<!-- pembuka file html -->
+<html>
+    <!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+    <head>
+        <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+        <title>Urutan Prioritas Selector</title>
+        <style>
+            h2 {
+               
+                color: darkblue;
+            }
+            p {
+                /* penggunaan code !important maka baris kode ini akan di prioritaskan pada html */
+                color:red !important;
+            }
+            div p {
+                color:green;
+            }
+            #aaa{
+                color:orange;
+            }
+            body div p {
+                color:white;
+            }
+            div p.kalimat {
+                color:silver;
+            }
+        </style>
+    </head>
+    <!-- penutup tag head -->
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+    <body>
+        <!-- tag h2 berfungsi untuk membuat heading 2 pada file html -->
+        <h2>
+            Warna......
+        </h2>
+        <!-- penggunaan style menggunakan metode inline style lebih diutamakan oleh browser dibandingkan menggunakan selector yang lain -->
+        <h2 style="color:orange">
+        Warna....
+        </h2>
+        <div>
+            <!-- pada bagian ini yang akan diprioritaskan -->
+            <p id="aaa" class="kalimat">
+            Sedang Belajar CSS...
+            </p>
+        </div>
+    </body>
+    <!-- tutup tag body -->
+</html>
+<!-- tutup tag html -->
